@@ -1,14 +1,13 @@
-# DWA
-Add Git Repo to Server
-git remote add prodServer ssh://curlylox82@104.236.229.23/var/repos/DWA.git
-
-Adding Commits
+# Deployment Plan - Local Development to Stage Server
+git add -A
 git commit -q -m “commit message”
+git push stageServer
+git tag -a v1.0.0 -m “Initial Commit”
+git push stageServer --tags
 
+-----
 
-Pushing Git Repo To Server
-git push prodServer
-
-Adding Tags and Pushing To Server
-git tag -a vX.X.X -m ‘version code or feature name’
-git push prodServer —tags
+# Deployment Plan - Local Development to Production Server
+git add -A
+git commit -q -m “commit message”
+git push stageServer
