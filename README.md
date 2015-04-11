@@ -1,4 +1,4 @@
-# Deployment Plan - Local Development to Stage Server
+### Deployment Plan - Local Development to Stage Server
 git add -A<br>
 git commit -q -m “commit message”<br>
 git push stageServer<br>
@@ -7,7 +7,7 @@ git push stageServer --tags<br>
 
 -----
 
-# Deployment Plan - Local Development to Production Server
+### Deployment Plan - Local Development to Production Server
 git add -A<br>
 git commit -q -m “commit message”<br>
 git push stageServer<br>
